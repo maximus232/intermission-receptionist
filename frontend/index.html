@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermission</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css?id=8">
+</head>
+<body>
+    <div class="background-image"></div>
+    <header>
+        <h1 class="intermission-text"><a href='https://www.theriptide.co.uk/intermission'>Intermission</a></h1>
+        <a id="findOutMore" href="https://www.theriptide.co.uk/intermission">find out more...</a>
+    </header>
+    <button onclick="enter()" class="enter">Ready to pause?</button>
+    <div class="chat-container">
+        <div class="chat-messages" id="chatMessages">
+            <div class="message_spacer"></div>
+            <div id='error-message' class="message error-message">Sorry, an error occured</div>
+        </div>
+        <div class="input_container">
+            <input type="text" id="userInput" placeholder="Chat to Amy..." class="chat-input">
+            <button onclick="sendMessage()" class="chat-send material-bubble">Send</button>
+        </div>
+    </div>
+    <footer>
+        <a href="https://www.theriptide.co.uk/">
+            <img src="img/logo-min.png" alt="Riptide Logo" class="footer-logo">
+        </a>
+    </footer>
+    <script src="js/main.js?id=12"></script>
+    <audio id='audio' autoplay loop muted>
+        <source src="audio/forest.mp3" type="audio/mpeg">
+    </audio>      
+</body>
+</html>
